@@ -1,0 +1,91 @@
+# ==========================================
+# Python Environments & Cache
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# ==========================================
+# Secrets and Local Environment Config
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Jupyter / Notebooks Temporary Files
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# Raw Datasets & Derived Data (Stay Local/Drive)
+# ==========================================
+Dateset/
+Dataset/
+dataset/
+datasets/
+data/raw/
+data/interim/
+data/processed/
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ==========================================
+# Reference Papers & Literature (Large PDFs)
+# ==========================================
+Final Ref Papers/
+Literature Review/
+*.pdf
+
+# ==========================================
+# Model Checkpoints & Large Weights
+# ==========================================
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.weights
+outputs/checkpoints/
+outputs/models/
+outputs/generated/
+
+# ==========================================
+# Audit Outputs (Preserve small reports, ignore images)
+# ==========================================
+outputs/audit/**/visualizations/
+outputs/audit/**/*.jpg
+outputs/audit/**/*.png
+outputs/audit/**/*.jpeg
+
+# ==========================================
+# Temporary and OS Files
+# ==========================================
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*.docx
+
+# ==========================================
+# IDE & Editors
+# ==========================================
+.vscode/
+.idea/

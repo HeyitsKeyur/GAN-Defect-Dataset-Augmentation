@@ -1,0 +1,2255 @@
+{
+  "generated_at_utc": "2026-11-01T14:44:20.432704+00:00",
+  "seed": 42,
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "executable": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\.venv\\Scripts\\python.exe",
+    "pillow": "11.3.0"
+  },
+  "paths": {
+    "data_root": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\Dateset\\Ceramic-defect\\data\\data",
+    "original_image_dir": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\Dateset\\Ceramic-defect\\data\\data\\original image",
+    "split_image_dir": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\Dateset\\Ceramic-defect\\data\\data\\image",
+    "json_dir": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\Dateset\\Ceramic-defect\\data\\data\\lables\\json",
+    "xml_dir": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\Dateset\\Ceramic-defect\\data\\data\\lables\\xml",
+    "txt_dir": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\Dateset\\Ceramic-defect\\data\\data\\lables\\txt",
+    "output_dir": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0"
+  },
+  "counting_method": "Image counts: unique filename stems under original image/ and image/{train,val,test}, extensions in IMAGE_EXTENSIONS. Annotation file counts: recursive files with .json/.xml/.txt under lables/. Instance counts: objects/shapes/lines parsed from each file. JSON LabelMe labels are the semantic class names used for per-class instance and image-containing-class counts. Image counts and instance counts are computed separately. Vendor train/val/test folders were recorded but not modified.",
+  "file_counts": {
+    "original_images": 2892,
+    "split_images": 2892,
+    "unique_stems": 2892,
+    "json_files": 2892,
+    "xml_files": 2892,
+    "txt_files": 2892,
+    "annotated_images_json_nonempty": 2892,
+    "images_without_json_objects": 0,
+    "vendor_split": {
+      "train": 2023,
+      "val": 577,
+      "test": 292
+    }
+  },
+  "annotation_formats": {
+    "labelme_json": {
+      "description": "LabelMe-style JSON with shapes[].points rectangles",
+      "shape_types": {
+        "rectangle": 7689
+      }
+    },
+    "pascal_voc_xml": {
+      "description": "Pascal VOC XML with object/bndbox xmin ymin xmax ymax"
+    },
+    "yolo_txt": {
+      "description": "YOLO TXT class_id cx cy w h normalized to image size"
+    }
+  },
+  "class_mapping_observed": {
+    "note": "Derived by pairing objects in file order when JSON/XML/TXT instance counts matched. This is observed in this archive, not an official codebook file.",
+    "xml_name_to_json_label": {
+      "abnormal thickness": "abnormal thickness",
+      "class_0": "adhesion",
+      "class_1": "scar",
+      "class_2": "spot",
+      "defect": "defect",
+      "uneven": "uneven"
+    },
+    "yolo_id_to_json_label": {
+      "0": "adhesion",
+      "1": "scar",
+      "2": "spot",
+      "3": "uneven",
+      "4": "abnormal thickness",
+      "5": "defect"
+    },
+    "xml_json_pair_counts": {
+      "class_2 -> spot": 3165,
+      "class_1 -> scar": 1593,
+      "class_0 -> adhesion": 1270,
+      "defect -> defect": 1137,
+      "uneven -> uneven": 368,
+      "abnormal thickness -> abnormal thickness": 156
+    },
+    "yolo_json_pair_counts": {
+      "2 -> spot": 3165,
+      "1 -> scar": 1593,
+      "0 -> adhesion": 1270,
+      "5 -> defect": 1137,
+      "3 -> uneven": 368,
+      "4 -> abnormal thickness": 156
+    }
+  },
+  "per_class": {
+    "json_instance_counts": {
+      "spot": 3165,
+      "scar": 1593,
+      "adhesion": 1270,
+      "defect": 1137,
+      "uneven": 368,
+      "abnormal thickness": 156
+    },
+    "xml_name_instance_counts": {
+      "class_2": 3165,
+      "class_1": 1593,
+      "class_0": 1270,
+      "defect": 1137,
+      "uneven": 368,
+      "abnormal thickness": 156
+    },
+    "yolo_id_instance_counts": {
+      "2": 3165,
+      "1": 1593,
+      "0": 1270,
+      "5": 1137,
+      "3": 368,
+      "4": 156
+    },
+    "json_image_counts_containing_class": {
+      "abnormal thickness": 156,
+      "adhesion": 632,
+      "defect": 808,
+      "scar": 763,
+      "spot": 908,
+      "uneven": 368
+    },
+    "multiclass_images": 637,
+    "instance_total_json": 7689,
+    "imbalance": {
+      "min_class": "abnormal thickness",
+      "max_class": "spot",
+      "min_instances": 156,
+      "max_instances": 3165,
+      "max_over_min": 20.28846153846154,
+      "share_of_largest": 0.41162699960983223
+    }
+  },
+  "image_analysis": {
+    "formats": {
+      "JPEG": 2892
+    },
+    "width": {
+      "count": 2892,
+      "min": 1024.0,
+      "max": 4096.0,
+      "mean": 1428.478561549101,
+      "median": 1024.0,
+      "p25": 1024.0,
+      "p75": 1024.0
+    },
+    "height": {
+      "count": 2892,
+      "min": 1024.0,
+      "max": 4300.0,
+      "mean": 1427.899723374827,
+      "median": 1024.0,
+      "p25": 1024.0,
+      "p75": 1024.0
+    },
+    "aspect_ratio_width_over_height": {
+      "count": 2892,
+      "min": 0.8717509283061983,
+      "max": 1.024,
+      "mean": 1.0001968323686423,
+      "median": 1.0,
+      "p25": 1.0,
+      "p75": 1.0
+    },
+    "resolution_histogram": {
+      "1024x1024": 2498,
+      "4096x4000": 245,
+      "4096x4300": 63,
+      "4000x4096": 62,
+      "2107x2058": 4,
+      "2058x2107": 4,
+      "2026x2038": 2,
+      "2038x2026": 2,
+      "3052x3501": 1,
+      "3200x3509": 1,
+      "3194x3477": 1,
+      "3206x3506": 1,
+      "3200x3492": 1,
+      "3370x3525": 1,
+      "3115x3484": 1,
+      "3318x3506": 1,
+      "3276x3467": 1,
+      "3339x3491": 1,
+      "3289x3456": 1,
+      "3293x3480": 1
+    },
+    "unreadable_images": [],
+    "unsupported_formats": [],
+    "filename_prefix_buckets": {
+      "numeric_id": 1361,
+      "defect": 808,
+      "uneven": 368,
+      "Abnormal thickness": 156,
+      "adhension": 79,
+      "spot": 48,
+      "con": 22,
+      "crack": 21,
+      "scar": 18,
+      "dirty": 11
+    }
+  },
+  "bounding_box_statistics": {
+    "source": "labelme_json rectangles converted to axis-aligned xyxy",
+    "size_bins_coco_pixel_area": {
+      "definition": {
+        "small": "area < 1024",
+        "medium": "1024 <= area < 9216",
+        "large": "area >= 9216"
+      },
+      "counts": {
+        "medium": 4280,
+        "small": 1987,
+        "large": 1422
+      }
+    },
+    "width_px": {
+      "count": 7689,
+      "min": 6.727828746177238,
+      "max": 3845.454545454546,
+      "mean": 100.91431713213605,
+      "median": 44.44444444444446,
+      "p25": 28.888888888888857,
+      "p75": 78.94736842105272
+    },
+    "height_px": {
+      "count": 7689,
+      "min": 6.727828746177352,
+      "max": 3795.6521739130435,
+      "mean": 89.70090372517951,
+      "median": 45.55555555555554,
+      "p25": 30.0,
+      "p75": 75.36231884057997
+    },
+    "area_px": {
+      "count": 7689,
+      "min": 45.26367963788955,
+      "max": 5601852.551984877,
+      "mean": 34015.64142843193,
+      "median": 1925.9259259259327,
+      "p25": 999.9999999999977,
+      "p75": 5629.629629629635
+    },
+    "relative_area": {
+      "count": 7689,
+      "min": 2.5699309387428207e-06,
+      "max": 0.8713522075135031,
+      "mean": 0.01246004799246986,
+      "median": 0.0014505268614969074,
+      "p25": 0.0006769910270785147,
+      "p75": 0.003223654664592979
+    },
+    "per_class": {
+      "spot": {
+        "instances": 3165,
+        "width_px": {
+          "count": 3165,
+          "min": 6.727828746177238,
+          "max": 903.4444444444446,
+          "mean": 36.57141246100747,
+          "median": 29.268292682926813,
+          "p25": 23.4234234234234,
+          "p75": 39.02439024390242
+        },
+        "height_px": {
+          "count": 3165,
+          "min": 6.727828746177352,
+          "max": 366.07303807303794,
+          "mean": 37.340120128871725,
+          "median": 31.531531531531527,
+          "p25": 25.555555555555543,
+          "p75": 40.67796610169489
+        },
+        "area_px": {
+          "count": 3165,
+          "min": 45.26367963788955,
+          "max": 163555.28952787686,
+          "mean": 1877.7093753100648,
+          "median": 918.0,
+          "p25": 621.5706447187903,
+          "p75": 1503.7037037037028
+        },
+        "size_bins": {
+          "small": 1804,
+          "medium": 1293,
+          "large": 68
+        }
+      },
+      "scar": {
+        "instances": 1593,
+        "width_px": {
+          "count": 1593,
+          "min": 11.7117117117117,
+          "max": 2803.8461538461543,
+          "mean": 144.02893019603752,
+          "median": 77.35849056603774,
+          "p25": 47.77777777777783,
+          "p75": 140.0
+        },
+        "height_px": {
+          "count": 1593,
+          "min": 17.977528089887755,
+          "max": 1434.375,
+          "mean": 116.21767998319815,
+          "median": 70.58823529411757,
+          "p25": 48.888888888888886,
+          "p75": 124.48979591836746
+        },
+        "area_px": {
+          "count": 1593,
+          "min": 263.7772908043164,
+          "max": 2976328.125,
+          "mean": 32290.557700560104,
+          "median": 5585.185185185188,
+          "p25": 2490.6289046230736,
+          "p75": 17240.740740740745
+        },
+        "size_bins": {
+          "medium": 946,
+          "large": 584,
+          "small": 63
+        }
+      },
+      "adhesion": {
+        "instances": 1270,
+        "width_px": {
+          "count": 1270,
+          "min": 11.0,
+          "max": 1647.2222222222224,
+          "mean": 78.55993399700718,
+          "median": 56.666666666666686,
+          "p25": 41.111111111111086,
+          "p75": 82.03787878787875
+        },
+        "height_px": {
+          "count": 1270,
+          "min": 12.592592592592581,
+          "max": 672.2222222222222,
+          "mean": 73.89444559968727,
+          "median": 55.55555555555554,
+          "p25": 41.193693693693746,
+          "p75": 82.03991130820398
+        },
+        "area_px": {
+          "count": 1270,
+          "min": 233.1961591220843,
+          "max": 645162.0370370368,
+          "mean": 9972.829225559935,
+          "median": 3206.7389875082035,
+          "p25": 1778.7037037037037,
+          "p75": 6331.869834710744
+        },
+        "size_bins": {
+          "medium": 973,
+          "large": 204,
+          "small": 93
+        }
+      },
+      "abnormal thickness": {
+        "instances": 156,
+        "width_px": {
+          "count": 156,
+          "min": 194.44444444444446,
+          "max": 3845.454545454546,
+          "mean": 1077.4030888596105,
+          "median": 799.8888888888889,
+          "p25": 540.7777777777777,
+          "p75": 998.8888888888889
+        },
+        "height_px": {
+          "count": 156,
+          "min": 215.8888888888888,
+          "max": 3795.6521739130435,
+          "mean": 883.2996098104794,
+          "median": 426.8888888888889,
+          "p25": 314.44444444444446,
+          "p75": 904.7979797979798
+        },
+        "area_px": {
+          "count": 156,
+          "min": 110711.11111111112,
+          "max": 5601852.551984877,
+          "mean": 1002870.959217532,
+          "median": 309602.8518518519,
+          "p25": 243881.19444444447,
+          "p75": 1821530.839413208
+        },
+        "size_bins": {
+          "large": 156
+        }
+      },
+      "defect": {
+        "instances": 1137,
+        "width_px": {
+          "count": 1137,
+          "min": 13.111111111111143,
+          "max": 284.44444444444434,
+          "mean": 53.64561526704466,
+          "median": 52.22222222222223,
+          "p25": 28.888888888888914,
+          "p75": 68.88888888888914
+        },
+        "height_px": {
+          "count": 1137,
+          "min": 12.555555555555568,
+          "max": 288.8888888888889,
+          "mean": 51.349797543327426,
+          "median": 52.17391304347825,
+          "p25": 27.777777777777782,
+          "p75": 66.66666666666666
+        },
+        "area_px": {
+          "count": 1137,
+          "min": 537.1604938271577,
+          "max": 30082.64462809913,
+          "mean": 2650.386608719351,
+          "median": 1893.8271604938247,
+          "p25": 1650.7654320987672,
+          "p75": 2255.55555555556
+        },
+        "size_bins": {
+          "medium": 1068,
+          "large": 42,
+          "small": 27
+        }
+      },
+      "uneven": {
+        "instances": 368,
+        "width_px": {
+          "count": 368,
+          "min": 94.44444444444446,
+          "max": 884.0909090909091,
+          "mean": 276.90900975730847,
+          "median": 232.72222222222214,
+          "p25": 167.50000000000006,
+          "p75": 350.27777777777777
+        },
+        "height_px": {
+          "count": 368,
+          "min": 91.11111111111113,
+          "max": 869.565217391304,
+          "mean": 261.8711942200836,
+          "median": 219.44444444444443,
+          "p25": 156.38888888888897,
+          "p75": 339.44444444444446
+        },
+        "area_px": {
+          "count": 368,
+          "min": 11018.518518518522,
+          "max": 729678.6389413988,
+          "mean": 87058.71202406123,
+          "median": 55722.46913580246,
+          "p25": 26992.901234567908,
+          "p75": 101043.90740740739
+        },
+        "size_bins": {
+          "large": 368
+        }
+      }
+    }
+  },
+  "validation": {
+    "issue_counts": {},
+    "dimension_mismatches": [],
+    "format_instance_count_mismatches": [],
+    "duplicate_annotation_entries": [],
+    "images_with_no_json_objects": []
+  },
+  "duplicates": {
+    "near_duplicate_definition": "Potential near-duplicates: 8x8 average-hash Hamming distance <= 5, excluding confirmed exact MD5 duplicates. These are candidates only.",
+    "confirmed_exact_md5_duplicate_groups": {
+      "8c6f8e4b4f8dc23358025966250cb9c8": [
+        "1_2_000244_1122094923254_NG_part0",
+        "defect533"
+      ],
+      "1e8c861be405ab4f569a0a19cb574c79": [
+        "1_2_000248_1122095021859_NG_part4",
+        "defect545"
+      ],
+      "e91b7b24a1170ac55b778700a56a2f04": [
+        "1_2_000292_1122095506997_NG_part4",
+        "defect557"
+      ],
+      "d348ea44f9d2f57eff2e8ffd6a655594": [
+        "1_2_000293_1122095509066_NG_part0",
+        "defect561"
+      ],
+      "890d7cd7cb64703bbbc38aa0387fb4be": [
+        "uneven165",
+        "uneven169"
+      ],
+      "417496ba1e1ffb92ab232a8eb987f278": [
+        "uneven166",
+        "uneven170"
+      ],
+      "c7f0d1f59e57989cc102a1aa61e51710": [
+        "uneven167",
+        "uneven171"
+      ],
+      "e7e53491a65675aab13453855426499b": [
+        "uneven168",
+        "uneven172"
+      ]
+    },
+    "confirmed_exact_md5_duplicate_group_count": 8,
+    "potential_near_duplicate_pairs": [
+      {
+        "stem_a": "1_1_000004_0121102105699_NG",
+        "stem_b": "1_1_000005_0121102216518_NG",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0805100939749_NG_part10",
+        "stem_b": "Abnormal thickness054",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0805100939749_NG_part10",
+        "stem_b": "Abnormal thickness086",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0805100939749_NG_part10",
+        "stem_b": "Abnormal thickness143",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0805100939749_NG_part10",
+        "stem_b": "defect068",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000001_0810104210546_NG_part3",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000011_0810101329245_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000012_0810101331415_NG_part10",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000014_0810104238084_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000015_0810104240261_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000024_0703154718901_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000024_0703154718901_NG_part3",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000028_0810104308325_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000030_0805145212958_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000032_0703154735818_NG_part2",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000035_0810104407516_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000043_0703090011819_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000053_0703154820427_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000053_0703154820427_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000062_0810101519649_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000067_0703155150581_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000077_0703155211829_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000078_0703090538165_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000082_0703155222542_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000084_0703155226729_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000098_0703155256521_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000101_0703155302940_NG_part2",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000168_1122092333799_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000193_0703091349903_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000199_0703091402661_NG_part6",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000240_0703091529765_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000377_0703092309259_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "1_2_000746_0815164842100_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000016_0803160604521_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000023_0810104300548_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000289_1122095503825_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000332_0313235626203_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000608_0314002944904_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000742_0815165020328_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000759_0815165539348_NG_part6",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "2_2_000765_0314004827309_NG_part5",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "defect189",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "defect633",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "defect645",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "defect661",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "defect681",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "defect713",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "defect717",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "uneven005",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "uneven050",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "uneven066",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "uneven090",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part2",
+        "stem_b": "uneven102",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000008_0818190719772_NG_part7",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000012_0810104233777_NG_part10",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000014_0810104238084_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000024_0703154718901_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000024_0703154718901_NG_part3",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000025_0810104301830_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000030_0703154731592_NG_part11",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000032_0703154735818_NG_part2",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000050_0703154814025_NG_part11",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000056_0703154826830_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000056_0703154826830_NG_part3",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000060_0703155112490_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000078_0703090538165_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000082_0703155222542_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000084_0703155226729_NG_part3",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000089_0703155237327_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000089_0703155237327_NG_part7",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000098_0703155256521_NG_part11",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000098_0703155256521_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000101_0703155302940_NG_part2",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000101_0703155302940_NG_part3",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000168_1122092333799_NG_part2",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000168_1122092333799_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000169_0703091258937_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000172_1122092455566_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000185_1122093006461_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000199_0703091402661_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000201_1122093610130_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000224_1122094311390_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000230_1122094525168_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000257_1122095354263_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000336_1122095638518_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000347_0703092154486_NG_part2",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000347_0703092154486_NG_part3",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000359_0703092219961_NG_part10",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000375_0703092303611_NG_part2",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000776_0815165835850_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "1_2_000781_0815170014701_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "2_2_000017_1108092722447_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "2_2_000023_0810104300548_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "2_2_000050_0810101456668_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "2_2_000289_1122095503825_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "2_2_000608_0314002944904_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "2_2_000765_0314004827309_NG_part5",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect141",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect189",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect201",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect633",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect637",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect645",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect713",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "defect717",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "uneven050",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0810104210546_NG_part3",
+        "stem_b": "uneven090",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_full",
+        "stem_b": "uneven318",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_full",
+        "stem_b": "uneven342",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_full",
+        "stem_b": "uneven366",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "1_2_000168_1122092333799_NG_part5",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "1_2_000185_1122093006461_NG_part0",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "1_2_000224_1122094311390_NG_part0",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "1_2_000293_1122095509066_NG_part0",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "1_2_000336_1122095638518_NG_part0",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "defect433",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "defect453",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part0",
+        "stem_b": "defect561",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part2",
+        "stem_b": "defect025",
+        "hamming": 0,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "1_2_000008_0807142032039_NG_part11",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "1_2_000031_0803160633330_NG_part5",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "1_2_000173_0703091307424_NG_part1",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "1_2_000219_1122094100449_NG_part5",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "1_2_000248_1122095021859_NG_part5",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "1_2_000279_1122095439994_NG_part5",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "1_2_000789_0815170314050_NG_part5",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000001_0813113720738_NG_part0",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000001_0813113720738_NG_part4",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000001_0813113720738_NG_part5",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000005_0807141318208_NG_part10",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000006_0807141320545_NG_part10",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000010_0313231246336_NG_part8",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000014_0810101338795_NG_part5",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000022_0810104258430_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000023_0804201942602_NG_part4",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000025_0804202351779_NG_part4",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000026_0804202437296_NG_part4",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000030_0804203650932_NG_part8",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000036_0810104414928_NG_part5",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000076_0313232157675_NG_part1",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000076_0313232157675_NG_part3",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000076_0313232157675_NG_part4",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000076_0313232157675_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000077_0313232206875_NG_part0",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000077_0313232206875_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000191_1122093212592_NG_part5",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000202_1122093640629_NG_part1",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000260_1122095403557_NG_part4",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000461_0314001217630_NG_part3",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000734_0815164747595_NG_part3",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000734_0815164747595_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000764_0815165729753_NG_part3",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_000817_0314005429824_NG_part4",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_001039_0314012053567_NG_part9",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_001087_0314012632040_NG_part4",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_001103_0314012824626_NG_part5",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "2_2_001107_0314012851170_NG_part4",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "defect029",
+        "hamming": 0,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "defect541",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "defect638",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "defect766",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven130",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven189",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven197",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven262",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven278",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven301",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven309",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven313",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven325",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven329",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven333",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven337",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven349",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part6",
+        "stem_b": "uneven357",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part9",
+        "stem_b": "1_2_000045_0703154803417_NG_part12",
+        "hamming": 1,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part9",
+        "stem_b": "1_2_000060_0703155112490_NG_part12",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part9",
+        "stem_b": "1_2_000194_0703091351998_NG_part12",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000001_0813113715924_NG_part9",
+        "stem_b": "defect033",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "1_2_000006_0121102315273_NG",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "1_2_000011_0121102649392_NG",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "1_2_000012_0121102709420_NG",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "1_2_000017_0121103408685_NG",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "1_2_000036_0121105209696_NG",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "1_2_000039_0121105641486_NG",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "1_2_000040_0121105855769_NG",
+        "hamming": 3,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0121101850711_NG",
+        "stem_b": "uneven286",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "1_2_000012_0810101331415_NG_part10",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "1_2_000028_0810104308325_NG_part6",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "1_2_000031_0803160633330_NG_part10",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "1_2_000781_0815170014701_NG_part6",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "defect148",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "uneven005",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "uneven066",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part6",
+        "stem_b": "uneven102",
+        "hamming": 4,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part7",
+        "stem_b": "1_2_000009_0805100956740_NG_part11",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part7",
+        "stem_b": "1_2_000009_0805100956740_NG_part15",
+        "hamming": 5,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part7",
+        "stem_b": "1_2_000009_0805100956740_NG_part7",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part7",
+        "stem_b": "1_2_000010_0805144653839_NG_part11",
+        "hamming": 2,
+        "status": "potential"
+      },
+      {
+        "stem_a": "1_2_000002_0810104212116_NG_part7",
+        "stem_b": "1_2_000011_0803160550853_NG_part7",
+        "hamming": 3,
+        "status": "potential"
+      }
+    ],
+    "original_vs_split_copies_compared": 2892,
+    "original_vs_split_hash_mismatches": 0,
+    "note_on_two_image_folders": "original image/ and image/{{train,val,test}} contain the same filename stems. Identical MD5 hashes mean two copies of the same file, not two distinct specimens."
+  },
+  "grouping": {
+    "method": "Filename pattern d_d_dddd_dddd_NG with optional _partN or _full",
+    "multi_member_filename_groups": 302,
+    "largest_groups": [
+      {
+        "group_id": "2_2_000652_0314003504976_NG",
+        "n": 15,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000008_0807142032039_NG",
+        "n": 14,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "2_2_000759_0815165539348_NG",
+        "n": 13,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000776_0815165835850_NG",
+        "n": 12,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000780_0815165957720_NG",
+        "n": 12,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "2_2_000344_0313235754439_NG",
+        "n": 12,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000168_1122092333799_NG",
+        "n": 11,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "2_2_000709_0314004152083_NG",
+        "n": 11,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000009_0805100956740_NG",
+        "n": 10,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000011_0807142334832_NG",
+        "n": 10,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000727_0815164234006_NG",
+        "n": 10,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "2_2_000002_0807140411799_NG",
+        "n": 10,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "2_2_000760_0815165556353_NG",
+        "n": 10,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000004_0807141312951_NG",
+        "n": 9,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000007_0807141742525_NG",
+        "n": 9,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000010_0807142332596_NG",
+        "n": 9,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000789_0815170314050_NG",
+        "n": 9,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000015_0810104240261_NG",
+        "n": 8,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000027_0803160624889_NG",
+        "n": 8,
+        "evidence": "filename_part_suffix"
+      },
+      {
+        "group_id": "1_2_000031_0803160633330_NG",
+        "n": 8,
+        "evidence": "filename_part_suffix"
+      }
+    ],
+    "vendor_split_vs_group_leakage_candidates": [
+      {
+        "group_id": "2_2_000652_0314003504976_NG",
+        "n_members": 15,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000008_0807142032039_NG",
+        "n_members": 14,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000759_0815165539348_NG",
+        "n_members": 13,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000776_0815165835850_NG",
+        "n_members": 12,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000780_0815165957720_NG",
+        "n_members": 12,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000344_0313235754439_NG",
+        "n_members": 12,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000168_1122092333799_NG",
+        "n_members": 11,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000709_0314004152083_NG",
+        "n_members": 11,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000009_0805100956740_NG",
+        "n_members": 10,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000011_0807142334832_NG",
+        "n_members": 10,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000727_0815164234006_NG",
+        "n_members": 10,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000002_0807140411799_NG",
+        "n_members": 10,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000760_0815165556353_NG",
+        "n_members": 10,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000004_0807141312951_NG",
+        "n_members": 9,
+        "splits": [
+          "test",
+          "train"
+        ]
+      },
+      {
+        "group_id": "1_2_000007_0807141742525_NG",
+        "n_members": 9,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000010_0807142332596_NG",
+        "n_members": 9,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000789_0815170314050_NG",
+        "n_members": 9,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000015_0810104240261_NG",
+        "n_members": 8,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000027_0803160624889_NG",
+        "n_members": 8,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000031_0803160633330_NG",
+        "n_members": 8,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000089_0703155237327_NG",
+        "n_members": 8,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000336_1122095638518_NG",
+        "n_members": 8,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000779_0815165943257_NG",
+        "n_members": 8,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000783_0815170047657_NG",
+        "n_members": 8,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000006_0807141320545_NG",
+        "n_members": 8,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000016_0803160604521_NG",
+        "n_members": 8,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000017_1108092722447_NG",
+        "n_members": 8,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000332_0313235626203_NG",
+        "n_members": 8,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000734_0815164747595_NG",
+        "n_members": 8,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_001032_0314012007503_NG",
+        "n_members": 8,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000025_0803160620554_NG",
+        "n_members": 7,
+        "splits": [
+          "test",
+          "train"
+        ]
+      },
+      {
+        "group_id": "1_2_000026_0803160622657_NG",
+        "n_members": 7,
+        "splits": [
+          "test",
+          "train"
+        ]
+      },
+      {
+        "group_id": "1_2_000224_1122094311390_NG",
+        "n_members": 7,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000781_0815170014701_NG",
+        "n_members": 7,
+        "splits": [
+          "test",
+          "train"
+        ]
+      },
+      {
+        "group_id": "2_2_000001_0813113720738_NG",
+        "n_members": 7,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000009_0807142037411_NG",
+        "n_members": 7,
+        "splits": [
+          "test",
+          "train"
+        ]
+      },
+      {
+        "group_id": "2_2_000254_0313234637021_NG",
+        "n_members": 7,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000742_0815165020328_NG",
+        "n_members": 7,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000035_0810104407516_NG",
+        "n_members": 6,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000040_0703154752796_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000098_0703155256521_NG",
+        "n_members": 6,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000198_0703091400491_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train"
+        ]
+      },
+      {
+        "group_id": "1_2_000199_0703091402661_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "1_2_000202_0703091409092_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train"
+        ]
+      },
+      {
+        "group_id": "2_2_000001_0807140409643_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000050_0810101456668_NG",
+        "n_members": 6,
+        "splits": [
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000077_0313232206875_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000087_0313232338933_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000757_0815165504044_NG",
+        "n_members": 6,
+        "splits": [
+          "test",
+          "train",
+          "val"
+        ]
+      },
+      {
+        "group_id": "2_2_000765_0314004827309_NG",
+        "n_members": 6,
+        "splits": [
+          "train",
+          "val"
+        ]
+      }
+    ]
+  },
+  "license_files_found_in_dataset_tree": [],
+  "visualizations": [
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_abnormal_thickness_Abnormal_thickness001.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_abnormal_thickness_Abnormal_thickness002.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_adhesion_1_2_000001_0810104210546_NG_part0.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_defect_defect001.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_defect_defect002.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_scar_1_1_000004_0121102105699_NG.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_spot_1_1_000004_0121102105699_NG.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_uneven_uneven001.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\class_uneven_uneven002.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\small_defect_1_1_000004_0121102105699_NG.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\large_defect_1_1_000004_0121102105699_NG.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\large_defect_1_1_000005_0121102216518_NG.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\large_defect_1_2_000001_0813113715924_NG_full.jpg",
+    "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\audit\\phase0\\visualizations\\large_defect_1_2_000002_0121101850711_NG.jpg"
+  ]
+}

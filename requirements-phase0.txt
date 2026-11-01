@@ -1,0 +1,6 @@
+# Phase 0 audit dependencies only.
+# Pillow: read image size/format, detect unreadable files, and draw
+# overlay visualizations without modifying original dataset images.
+# pytest: run annotation/box validation unit tests on CPU.
+Pillow>=10.0.0,<12
+pytest>=8.0.0,<9
