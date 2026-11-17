@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-11-17T18:35:27.500005+00:00",
+  "environment_name": "windows",
+  "is_colab_runtime": false,
+  "python_version": "3.12.10",
+  "platform_details": "Windows-11-10.0.26300-SP0",
+  "installed_packages": {
+    "torch": "not installed",
+    "torchvision": "not installed",
+    "PIL": "11.3.0",
+    "numpy": "not installed",
+    "pytest": "8.4.2"
+  },
+  "gpu_available": false,
+  "gpu_name": null,
+  "gpu_count": 0,
+  "vram_total_gb": null,
+  "torch_version": null,
+  "cuda_version": null,
+  "dataset_verified": true,
+  "dataset_path": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\Dateset\\Ceramic-defect\\data\\data",
+  "dataset_errors": [],
+  "split_manifests_verified": true,
+  "split_manifest_dir": "E:\\MTech[CSE] Nirma_University\\S3\\Major Project\\Defect Dataset Augmentation using Generative Adversarial Networks (GAN)\\outputs\\splits\\phase1",
+  "split_counts": {
+    "train": 1967,
+    "val": 479,
+    "test": 446
+  },
+  "split_leakage_detected": false,
+  "split_errors": [],
+  "tensor_op_success": true,
+  "tensor_device": "python-builtin (cpu-fallback)",
+  "overall_status": "PASS",
+  "notes": [
+    "Running in local Windows environment.",
+    "No CUDA GPU detected; execution will fall back to CPU for local development."
+  ]
+}

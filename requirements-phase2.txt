@@ -1,0 +1,4 @@
+# Phase 2 environment dependencies: local smoke test and Colab runtime integration.
+Pillow>=10.0.0,<12
+pytest>=8.0.0,<9
+numpy>=1.24.0
