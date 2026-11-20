@@ -73,6 +73,7 @@ outputs/audit/**/visualizations/
 outputs/audit/**/*.jpg
 outputs/audit/**/*.png
 outputs/audit/**/*.jpeg
+outputs/qc_phase3/
 
 # ==========================================
 # Temporary and OS Files

@@ -76,21 +76,21 @@ Tasks:
 
 **Acceptance gate:** core scripts run without depending on a specific machine path; no secrets or large raw data are committed.
 
-### Phase 3 — Preprocessing and data pipeline
+### Phase 3 — Preprocessing and data pipeline (Completed & Verified)
 **Primary environment:** implement/test in VS Code; optional Colab scale checks
 
 Tasks:
-1. Implement dataset readers and annotation conversion if required.
-2. Inspect defect bounding-box size distribution and context.
-3. Choose a justified crop/patch size based on Phase 0 analysis.
-4. Implement resizing/cropping while transforming labels correctly.
-5. Keep train-only transformations separate from validation/test processing.
-6. Add tests for coordinate transformations and boundary conditions.
-7. Visualize sample images with boxes before and after transformations.
+1. Implement dataset readers and annotation conversion if required. (Done)
+2. Inspect defect bounding-box size distribution and context. (Done: 7,689 bboxes analyzed)
+3. Choose a justified crop/patch size based on Phase 0/3 analysis. (Done: 256x256 adaptive patches + 640x640 letterbox)
+4. Implement resizing/cropping while transforming labels correctly. (Done: crop_geometry, crop_extractor, full_image_pipeline)
+5. Keep train-only transformations separate from validation/test processing. (Done: frozen Phase 1 split routing, zero leakage)
+6. Add tests for coordinate transformations and boundary conditions. (Done: 11 tests in test_preprocessing.py, 46 total pass)
+7. Visualize sample images with boxes before and after transformations. (Done: visualize_crops.py, 4-panel figures)
 
-**Deliverables:** reusable data loader/preprocessing modules, visual sanity-check samples, tests.
+**Deliverables:** reusable data loader/preprocessing modules (`src/data/preprocessing/`), visual sanity-check samples (`outputs/qc_phase3/`), tests (`tests/test_preprocessing.py`), progress documentation (`PHASE3_HANDOFF.md`).
 
-**Acceptance gate:** boxes remain correct after transformations; validation/test data are not augmented or used to train the GAN.
+**Acceptance gate:** boxes remain correct after transformations; validation/test data are not augmented or used to train the GAN. (Met: tested and verified)
 
 ### Phase 4 — Real-only detector baseline
 **Code development:** VS Code  
