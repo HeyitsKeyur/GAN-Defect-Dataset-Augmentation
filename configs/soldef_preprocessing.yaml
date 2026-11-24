@@ -1,0 +1,51 @@
+# SolDef_AI Preprocessing Configuration
+dataset_name: "soldef"
+benchmark_name: "primary_side_view"
+views_included:
+  - "V2"
+  - "V2.1"
+
+# Target Defect Classes (good preserved in source annotations but excluded from target defects)
+target_classes:
+  - "exc_solder"
+  - "spike"
+  - "poor_solder"
+
+class_to_id:
+  exc_solder: 0
+  spike: 1
+  poor_solder: 2
+
+# Pipeline A: Defect-Centered Patch Extraction (GAN Preparation)
+patches:
+  target_size: 256
+  crop_strategy: "context_crop_resize"  # "context_crop_resize" | "fixed_window_crop"
+  context_margin: 0.20                  # 20% context around defect extent
+  min_crop_size: 256                    # Minimum dimension before resizing
+  allow_padding: true
+  pad_color: [114, 114, 114]
+  resize_resample: "bilinear"
+  min_retention_ratio: 0.30             # Minimum area retention for neighbor annotations
+  min_clipped_area: 9.0                 # Minimum area in pixels for retained neighbor boxes
+  source_split: "train"                 # Strictly TRAIN split only for GAN preparation
+
+# Pipeline B: Full-Image Detector Preprocessing
+detector:
+  target_size: 640
+  pad_color: [114, 114, 114]
+  resize_resample: "bilinear"
+  splits_to_process:
+    - "train"
+    - "val"
+    - "test"
+
+# Quality Control
+qc:
+  num_visual_samples: 12
+  random_seed: 0
+
+# Directory Paths (Relative to repository root)
+paths:
+  split_manifest_dir: "outputs/splits/soldef/phase1"
+  raw_labeled_dir: "Dateset/SolDef_AI/Labeled"
+  output_base_dir: "outputs/preprocessing/soldef/phase_d"

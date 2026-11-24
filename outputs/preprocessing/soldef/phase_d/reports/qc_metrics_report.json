@@ -1,0 +1,81 @@
+{
+  "benchmark": "SolDef_AI Primary Side-View Preprocessing & Visual QC (Stage D)",
+  "pipeline_a_patch_extraction": {
+    "total_source_train_images": 140,
+    "total_eligible_target_defects": 256,
+    "total_extracted_patches": 256,
+    "patch_counts_by_class": {
+      "spike": 96,
+      "exc_solder": 128,
+      "poor_solder": 32
+    },
+    "unique_parent_images": 135,
+    "unique_grouping_units": 29,
+    "boundary_crops_count": 0,
+    "boundary_crops_percentage": 0.0,
+    "patch_dimensions": "256x256"
+  },
+  "pipeline_b_detector_preprocessing": {
+    "target_size": "640x640",
+    "aspect_ratio_preservation": "letterbox_padding",
+    "pad_color": [
+      114,
+      114,
+      114
+    ],
+    "split_summaries": {
+      "train": {
+        "image_count": 140,
+        "target_box_count": 256,
+        "class_counts": {
+          "spike": 96,
+          "exc_solder": 128,
+          "poor_solder": 32
+        },
+        "scale_factor": 0.25,
+        "pad_top_bottom": 140,
+        "pad_left_right": 0
+      },
+      "val": {
+        "image_count": 30,
+        "target_box_count": 51,
+        "class_counts": {
+          "exc_solder": 26,
+          "poor_solder": 10,
+          "spike": 15
+        },
+        "scale_factor": 0.25,
+        "pad_top_bottom": 140,
+        "pad_left_right": 0
+      },
+      "test": {
+        "image_count": 30,
+        "target_box_count": 62,
+        "class_counts": {
+          "exc_solder": 28,
+          "spike": 19,
+          "poor_solder": 15
+        },
+        "scale_factor": 0.25,
+        "pad_top_bottom": 140,
+        "pad_left_right": 0
+      }
+    }
+  },
+  "visual_qc_sample_count": 12,
+  "visual_qc_images": [
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_01_spike_WIN_20220330_16_14_05_Pro_d02_spike.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_02_poor_solder_WIN_20220330_16_01_50_Pro_d01_poor_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_03_poor_solder_WIN_20220408_14_32_07_Pro_d00_poor_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_04_spike_WIN_20220330_13_29_21_Pro_d02_spike.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_05_exc_solder_WIN_20220408_14_16_40_Pro_d00_exc_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_06_exc_solder_WIN_20220330_15_56_06_Pro_d01_exc_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_07_exc_solder_WIN_20220408_14_17_12_Pro_d02_exc_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_08_exc_solder_WIN_20220330_13_48_56_Pro_d02_exc_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_09_poor_solder_WIN_20220408_14_10_55_Pro_d00_poor_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_10_exc_solder_WIN_20220408_13_49_43_Pro_C4_d00_exc_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_11_exc_solder_WIN_20220408_13_49_16_Pro_C1_d01_exc_solder.png",
+    "outputs/preprocessing/soldef/phase_d/qc/visualizations/qc_12_spike_WIN_20220408_14_11_46_Pro_d01_spike.png"
+  ],
+  "qc_status": "COMPUTATIONALLY_VALID_AND_VISUALLY_VERIFIED"
+}

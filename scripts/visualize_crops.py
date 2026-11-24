@@ -110,6 +110,7 @@ def generate_qc_figure(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate Visual Quality-Control panels.")
     parser.add_argument("--samples", type=int, default=5, help="Number of visual QC samples to generate.")
+    parser.add_argument("--stems", nargs="*", default=None, help="Explicit list of image stems to generate QC for.")
     parser.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "outputs" / "qc_phase3", help="Destination folder.")
     args = parser.parse_args()
 
@@ -122,6 +123,10 @@ def main() -> int:
     if not json_files:
         print("Error: No JSON annotations found.", file=sys.stderr)
         return 1
+
+    if args.stems:
+        stem_set = set(args.stems)
+        json_files = [jf for jf in json_files if jf.stem in stem_set]
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     generated = 0
@@ -140,7 +145,7 @@ def main() -> int:
             continue
 
         with Image.open(img_path) as pil_img:
-            pil_img.load()
+            pil_img = pil_img.convert("RGB")
             out_file = args.output_dir / f"qc_{stem}.jpg"
             generate_qc_figure(pil_img, boxes, stem, out_file)
             print(f"  [QC Generated] {out_file.name}")

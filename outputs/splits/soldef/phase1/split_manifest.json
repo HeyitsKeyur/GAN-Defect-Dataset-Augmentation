@@ -1,0 +1,156 @@
+{
+  "dataset_name": "soldef",
+  "benchmark_type": "primary_side_view",
+  "views_included": [
+    "V2",
+    "V2.1"
+  ],
+  "target_classes_defect_only": [
+    "exc_solder",
+    "spike",
+    "poor_solder"
+  ],
+  "all_side_view_classes": [
+    "good",
+    "exc_solder",
+    "spike",
+    "poor_solder"
+  ],
+  "seed": 0,
+  "total_images": 200,
+  "total_groups": 66,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "train": {
+    "image_count": 140,
+    "group_count": 30,
+    "instance_counts": {
+      "good": 50,
+      "exc_solder": 128,
+      "spike": 96,
+      "poor_solder": 32
+    },
+    "image_counts": {
+      "good": 43,
+      "exc_solder": 101,
+      "spike": 81,
+      "poor_solder": 27
+    },
+    "groups": [
+      "CS2_R0805_atomic_block",
+      "CS6_R0805_atomic_block",
+      "CS1_R0805_specimen_04",
+      "CS6_C0805_C11",
+      "CS1_R0805_specimen_09",
+      "CS2_R0603_specimen_08",
+      "CS2_R0603_specimen_04",
+      "CS6_C0805_C4",
+      "CS2_R0603_specimen_09",
+      "CS1_R0805_specimen_06",
+      "CS2_R1206_specimen_06",
+      "CS1_R0805_specimen_18",
+      "CS1_R0805_specimen_08",
+      "CS6_C0805_C3",
+      "CS1_R0805_specimen_13",
+      "CS2_R0603_specimen_07",
+      "CS1_R1206_specimen_02",
+      "CS2_R0603_specimen_00",
+      "CS1_R0805_specimen_19",
+      "CS6_C0805_C12",
+      "CS6_C0805_C1",
+      "CS1_R1206_specimen_05",
+      "CS2_R0603_specimen_01",
+      "CS2_R0603_specimen_02",
+      "CS1_R0805_specimen_16",
+      "CS1_R0805_specimen_02",
+      "CS1_R1206_specimen_06",
+      "CS6_C0805_C2",
+      "CS2_R1206_specimen_08",
+      "CS2_R1206_specimen_09"
+    ]
+  },
+  "val": {
+    "image_count": 30,
+    "group_count": 19,
+    "instance_counts": {
+      "good": 14,
+      "exc_solder": 26,
+      "spike": 15,
+      "poor_solder": 10
+    },
+    "image_counts": {
+      "good": 14,
+      "exc_solder": 21,
+      "spike": 14,
+      "poor_solder": 10
+    },
+    "groups": [
+      "CS1_R1206_specimen_09",
+      "CS1_R1206_specimen_08",
+      "CS1_R1206_specimen_04",
+      "CS2_R0603_specimen_03",
+      "CS2_R0603_specimen_05",
+      "CS6_C0805_C6",
+      "CS1_R1206_specimen_03",
+      "CS2_R1206_specimen_00",
+      "CS1_R0805_specimen_11",
+      "CS1_R1206_specimen_07",
+      "CS6_C0805_C7",
+      "CS1_R0805_specimen_03",
+      "CS1_R0805_specimen_05",
+      "CS1_R0805_specimen_07",
+      "CS2_R1206_specimen_02",
+      "CS2_R1206_specimen_05",
+      "CS1_R0805_specimen_12",
+      "CS6_C0805_C5",
+      "CS2_R1206_specimen_04"
+    ]
+  },
+  "test": {
+    "image_count": 30,
+    "group_count": 17,
+    "instance_counts": {
+      "good": 10,
+      "exc_solder": 28,
+      "spike": 19,
+      "poor_solder": 15
+    },
+    "image_counts": {
+      "good": 10,
+      "exc_solder": 19,
+      "spike": 19,
+      "poor_solder": 14
+    },
+    "groups": [
+      "CS1_R0805_specimen_00",
+      "CS6_C0805_C14",
+      "CS1_R0805_specimen_01",
+      "CS2_R1206_specimen_01",
+      "CS1_R0805_specimen_14",
+      "CS1_R0805_specimen_15",
+      "CS1_R0805_specimen_17",
+      "CS2_R1206_specimen_07",
+      "CS1_R1206_specimen_00",
+      "CS6_C0805_C9",
+      "CS1_R0805_specimen_10",
+      "CS6_C0805_C8",
+      "CS6_C0805_C13",
+      "CS2_R0603_specimen_06",
+      "CS6_C0805_C10",
+      "CS1_R1206_specimen_01",
+      "CS2_R1206_specimen_03"
+    ]
+  },
+  "leakage_verification": {
+    "image_overlap_train_val": 0,
+    "image_overlap_train_test": 0,
+    "image_overlap_val_test": 0,
+    "group_overlap_train_val": 0,
+    "group_overlap_train_test": 0,
+    "group_overlap_val_test": 0,
+    "leakage_detected": false
+  }
+}

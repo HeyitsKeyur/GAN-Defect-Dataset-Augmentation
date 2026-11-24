@@ -1,0 +1,2301 @@
+{
+  "CS1_R0805_specimen_00": {
+    "group_id": "CS1_R0805_specimen_00",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (00) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_11_16_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_33_34_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_01": {
+    "group_id": "CS1_R0805_specimen_01",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (01) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_11_29_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_34_05_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_02": {
+    "group_id": "CS1_R0805_specimen_02",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (02) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_11_58_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_36_37_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_03": {
+    "group_id": "CS1_R0805_specimen_03",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (03) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_12_12_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_37_02_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_04": {
+    "group_id": "CS1_R0805_specimen_04",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (04) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_13_31_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_37_25_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_05": {
+    "group_id": "CS1_R0805_specimen_05",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (05) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_17_14_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_37_48_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_06": {
+    "group_id": "CS1_R0805_specimen_06",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (06) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_17_51_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_38_01_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "good": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_07": {
+    "group_id": "CS1_R0805_specimen_07",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (07) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_18_07_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_38_14_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_08": {
+    "group_id": "CS1_R0805_specimen_08",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (08) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_18_32_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1,
+          "good": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_38_24_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_09": {
+    "group_id": "CS1_R0805_specimen_09",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (09) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_19_17_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_38_35_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_10": {
+    "group_id": "CS1_R0805_specimen_10",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (10) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_20_12_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_39_16_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_11": {
+    "group_id": "CS1_R0805_specimen_11",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (11) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_20_23_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_39_31_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_12": {
+    "group_id": "CS1_R0805_specimen_12",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (12) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_20_35_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_40_20_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_13": {
+    "group_id": "CS1_R0805_specimen_13",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (13) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_20_47_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_40_35_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 2
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_14": {
+    "group_id": "CS1_R0805_specimen_14",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (14) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_20_58_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_40_52_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "good": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_15": {
+    "group_id": "CS1_R0805_specimen_15",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (15) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_21_12_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_41_05_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_16": {
+    "group_id": "CS1_R0805_specimen_16",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (16) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_21_32_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_41_16_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_17": {
+    "group_id": "CS1_R0805_specimen_17",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (17) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_22_11_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_41_28_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_18": {
+    "group_id": "CS1_R0805_specimen_18",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (18) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_22_28_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_41_43_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R0805_specimen_19": {
+    "group_id": "CS1_R0805_specimen_19",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (19) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_22_42_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_42_25_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 2
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_00": {
+    "group_id": "CS1_R1206_specimen_00",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (00) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_28_00_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "poor_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_48_20_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_01": {
+    "group_id": "CS1_R1206_specimen_01",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (01) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_28_10_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_48_31_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_02": {
+    "group_id": "CS1_R1206_specimen_02",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (02) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_28_20_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_48_56_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "spike": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_03": {
+    "group_id": "CS1_R1206_specimen_03",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (03) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_28_34_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_49_05_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_04": {
+    "group_id": "CS1_R1206_specimen_04",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (04) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_28_47_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_49_24_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_05": {
+    "group_id": "CS1_R1206_specimen_05",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (05) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_29_03_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_49_35_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "good": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_06": {
+    "group_id": "CS1_R1206_specimen_06",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (06) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_29_21_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_49_50_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_07": {
+    "group_id": "CS1_R1206_specimen_07",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (07) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_29_35_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_50_04_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_08": {
+    "group_id": "CS1_R1206_specimen_08",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (08) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_29_53_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_50_17_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS1_R1206_specimen_09": {
+    "group_id": "CS1_R1206_specimen_09",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (09) across matched views",
+    "subset_or_cs": "CS1",
+    "component_type": "R1206",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220330_13_30_21_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "poor_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_13_50_38_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS2_R0805_atomic_block": {
+    "group_id": "CS2_R0805_atomic_block",
+    "evidence_level": "atomic_fallback",
+    "specimen_identity_status": "unknown",
+    "rationale": "Asymmetric capture counts across views in CS2 R0805; grouped into atomic block for zero leakage",
+    "subset_or_cs": "CS2",
+    "component_type": "R0805",
+    "member_count": 36,
+    "members": [
+      {
+        "stem": "WIN_20220330_15_56_06_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_15_56_21_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_01_25_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_01_50_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_02_04_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_02_29_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_02_46_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_02_56_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_03_53_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_04_06_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_04_28_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_04_39_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_04_53_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_05_02_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_05_11_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_05_22_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_05_34_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_05_47_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_06_05_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "good": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_06_21_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_14_05_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 2,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_14_26_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "good": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_15_17_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_15_27_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_15_38_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_15_49_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_16_02_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_16_16_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 2,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_16_29_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_17_18_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 2,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_17_47_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_17_58_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_18_10_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_18_24_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_18_41_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220330_16_18_53_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_00": {
+    "group_id": "CS2_R0603_specimen_00",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (00) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_07_04_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_01": {
+    "group_id": "CS2_R0603_specimen_01",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (01) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_07_17_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_02": {
+    "group_id": "CS2_R0603_specimen_02",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (02) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_07_29_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_03": {
+    "group_id": "CS2_R0603_specimen_03",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (03) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_07_40_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 2
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_04": {
+    "group_id": "CS2_R0603_specimen_04",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (04) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_07_49_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_05": {
+    "group_id": "CS2_R0603_specimen_05",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (05) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_07_58_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_06": {
+    "group_id": "CS2_R0603_specimen_06",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (06) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_08_11_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "poor_solder": 1
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_07": {
+    "group_id": "CS2_R0603_specimen_07",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (07) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_08_43_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_08": {
+    "group_id": "CS2_R0603_specimen_08",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (08) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_09_05_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R0603_specimen_09": {
+    "group_id": "CS2_R0603_specimen_09",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (09) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R0603",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_09_40_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 2
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_00": {
+    "group_id": "CS2_R1206_specimen_00",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (00) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_10_14_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_01": {
+    "group_id": "CS2_R1206_specimen_01",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (01) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_10_23_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_02": {
+    "group_id": "CS2_R1206_specimen_02",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (02) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_10_38_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_03": {
+    "group_id": "CS2_R1206_specimen_03",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (03) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_10_53_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "good": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_04": {
+    "group_id": "CS2_R1206_specimen_04",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (04) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_11_07_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_05": {
+    "group_id": "CS2_R1206_specimen_05",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (05) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_11_37_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_06": {
+    "group_id": "CS2_R1206_specimen_06",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (06) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_11_49_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 2
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_07": {
+    "group_id": "CS2_R1206_specimen_07",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (07) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_12_00_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "good": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_08": {
+    "group_id": "CS2_R1206_specimen_08",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (08) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_12_11_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS2_R1206_specimen_09": {
+    "group_id": "CS2_R1206_specimen_09",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence pairing index (09) across matched views",
+    "subset_or_cs": "CS2",
+    "component_type": "R1206",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220330_16_12_31_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C7": {
+    "group_id": "CS6_C0805_C7",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence alignment to C7 in V2.1",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_43_00_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_13_50_13_Pro_C7",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C8": {
+    "group_id": "CS6_C0805_C8",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence alignment to C8 in V2.1",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_43_17_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_13_50_25_Pro_C8",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C9": {
+    "group_id": "CS6_C0805_C9",
+    "evidence_level": "inferred",
+    "specimen_identity_status": "inferred",
+    "rationale": "Chronological sequence alignment to C9 in V2.1",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_43_34_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_13_50_38_Pro_C9",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C10": {
+    "group_id": "CS6_C0805_C10",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C10 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_44_48_Pro_C10",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_13_51_02_Pro_C10",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C12": {
+    "group_id": "CS6_C0805_C12",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C12 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_46_05_Pro_C12",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_13_51_51_Pro_C12",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C13": {
+    "group_id": "CS6_C0805_C13",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C13 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_46_20_Pro_C13",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_13_52_04_Pro_C13",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C14": {
+    "group_id": "CS6_C0805_C14",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C14 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 2,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_46_35_Pro_C14",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_13_52_16_Pro_C14",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C1": {
+    "group_id": "CS6_C0805_C1",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C1 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_49_16_Pro_C1",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C2": {
+    "group_id": "CS6_C0805_C2",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C2 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_49_25_Pro_C2",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C3": {
+    "group_id": "CS6_C0805_C3",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C3 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_49_34_Pro_C3",
+        "view": "V2",
+        "instances": {
+          "good": 2,
+          "spike": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C4": {
+    "group_id": "CS6_C0805_C4",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C4 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_49_43_Pro_C4",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C5": {
+    "group_id": "CS6_C0805_C5",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C5 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_49_53_Pro_C5",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C6": {
+    "group_id": "CS6_C0805_C6",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C6 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_50_02_Pro_C6",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1
+        }
+      }
+    ]
+  },
+  "CS6_C0805_C11": {
+    "group_id": "CS6_C0805_C11",
+    "evidence_level": "verified",
+    "specimen_identity_status": "verified",
+    "rationale": "Explicit component suffix _C11 in filename",
+    "subset_or_cs": "CS6",
+    "component_type": "C0805",
+    "member_count": 1,
+    "members": [
+      {
+        "stem": "WIN_20220408_13_51_39_Pro_C11",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      }
+    ]
+  },
+  "CS6_R0805_atomic_block": {
+    "group_id": "CS6_R0805_atomic_block",
+    "evidence_level": "atomic_fallback",
+    "specimen_identity_status": "unknown",
+    "rationale": "Asymmetric capture counts across views in CS6 R0805; grouped into atomic block for zero leakage",
+    "subset_or_cs": "CS6",
+    "component_type": "R0805",
+    "member_count": 63,
+    "members": [
+      {
+        "stem": "WIN_20220408_14_02_58_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_03_19_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_03_30_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_03_41_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_03_53_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_04_10_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_04_22_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_04_34_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_04_45_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_04_59_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_05_25_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_05_45_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_09_46_Pro_C35",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_10_29_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_10_41_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_10_55_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_11_07_Pro",
+        "view": "V2",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_11_18_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_11_34_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_11_46_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_12_00_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_12_16_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_13_28_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_13_37_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_13_49_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "poor_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_14_00_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_14_11_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_14_21_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_14_34_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_14_47_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_14_57_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_15_16_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_16_20_Pro",
+        "view": "V2",
+        "instances": {
+          "poor_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_16_40_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_16_59_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_17_12_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_17_26_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_17_48_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_18_00_Pro",
+        "view": "V2",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_18_18_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_18_26_Pro",
+        "view": "V2",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_24_18_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_24_30_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_24_40_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_24_59_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_25_22_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_25_34_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_25_56_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_26_07_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_26_31_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_26_45_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_27_01_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_27_19_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_30_59_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_31_09_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2,
+          "spike": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_31_27_Pro",
+        "view": "V2.1",
+        "instances": {
+          "spike": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_31_36_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_31_46_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_31_58_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 2
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_32_07_Pro",
+        "view": "V2.1",
+        "instances": {
+          "poor_solder": 1,
+          "exc_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_32_15_Pro",
+        "view": "V2.1",
+        "instances": {
+          "good": 1,
+          "poor_solder": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_32_27_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1
+        }
+      },
+      {
+        "stem": "WIN_20220408_14_32_54_Pro",
+        "view": "V2.1",
+        "instances": {
+          "exc_solder": 1,
+          "good": 1,
+          "spike": 1
+        }
+      }
+    ]
+  }
+}
