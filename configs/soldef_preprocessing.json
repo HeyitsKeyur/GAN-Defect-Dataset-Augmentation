@@ -1,0 +1,38 @@
+{
+  "dataset_name": "soldef",
+  "benchmark_name": "primary_side_view",
+  "views_included": ["V2", "V2.1"],
+  "target_classes": ["exc_solder", "spike", "poor_solder"],
+  "class_to_id": {
+    "exc_solder": 0,
+    "spike": 1,
+    "poor_solder": 2
+  },
+  "patches": {
+    "target_size": 256,
+    "crop_strategy": "context_crop_resize",
+    "context_margin": 0.20,
+    "min_crop_size": 256,
+    "allow_padding": true,
+    "pad_color": [114, 114, 114],
+    "resize_resample": "bilinear",
+    "min_retention_ratio": 0.30,
+    "min_clipped_area": 9.0,
+    "source_split": "train"
+  },
+  "detector": {
+    "target_size": 640,
+    "pad_color": [114, 114, 114],
+    "resize_resample": "bilinear",
+    "splits_to_process": ["train", "val", "test"]
+  },
+  "qc": {
+    "num_visual_samples": 12,
+    "random_seed": 0
+  },
+  "paths": {
+    "split_manifest_dir": "outputs/splits/soldef/phase1",
+    "raw_labeled_dir": "Dateset/SolDef_AI/Labeled",
+    "output_base_dir": "outputs/preprocessing/soldef/phase_d"
+  }
+}

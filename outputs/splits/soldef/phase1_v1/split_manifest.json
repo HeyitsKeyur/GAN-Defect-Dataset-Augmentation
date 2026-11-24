@@ -1,0 +1,37 @@
+{
+  "dataset_name": "soldef",
+  "benchmark_type": "secondary_top_down",
+  "view": "V1",
+  "target_classes": [
+    "good",
+    "no_good"
+  ],
+  "seed": 42,
+  "total_images": 228,
+  "split_ratios": {
+    "train": 0.7017543859649122,
+    "val": 0.14912280701754385,
+    "test": 0.14912280701754385
+  },
+  "train": {
+    "image_count": 160,
+    "instance_counts": {
+      "good": 77,
+      "no_good": 83
+    }
+  },
+  "val": {
+    "image_count": 34,
+    "instance_counts": {
+      "good": 16,
+      "no_good": 18
+    }
+  },
+  "test": {
+    "image_count": 34,
+    "instance_counts": {
+      "good": 19,
+      "no_good": 15
+    }
+  }
+}

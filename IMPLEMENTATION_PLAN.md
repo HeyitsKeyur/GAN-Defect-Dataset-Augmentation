@@ -88,11 +88,27 @@ Tasks:
 6. Add tests for coordinate transformations and boundary conditions. (Done: 11 tests in test_preprocessing.py, 46 total pass)
 7. Visualize sample images with boxes before and after transformations. (Done: visualize_crops.py, 4-panel figures)
 
-**Deliverables:** reusable data loader/preprocessing modules (`src/data/preprocessing/`), visual sanity-check samples (`outputs/qc_phase3/`), tests (`tests/test_preprocessing.py`), progress documentation (`PHASE3_HANDOFF.md`).
+**Deliverables:** reusable data loader/preprocessing modules (`src/data/preprocessing/`), visual sanity-check samples (`outputs/qc_phase3/`), tests (`tests/test_preprocessing.py`), progress documentation (`PHASE3_HANDOFF.md`, `PHASE3_QC_AUDIT.md`).
 
-**Acceptance gate:** boxes remain correct after transformations; validation/test data are not augmented or used to train the GAN. (Met: tested and verified)
+**Acceptance gate:** boxes remain correct after transformations; validation/test data are not augmented or used to train the GAN. (Met: tested and verified for Ceramic-Defect reference pipeline)
 
-### Phase 4 — Real-only detector baseline
+---
+
+### Dataset Migration Milestone — Controlled Migration to SolDef_AI (Aerospace PCB Solder Defects)
+**Context:** Per academic guide recommendation, transitioning primary benchmark from Ceramic-Defect (proxy) to SolDef_AI (authentic aerospace PCB solder defect dataset, ECSS-Q-ST-70-38C standard). Ceramic-Defect implementation is preserved as reference.
+
+**Stages:**
+- **Stage A — Dataset Audit & Verification:** Completed. 428 labeled images ($2560 \times 1440$ RGB), 671 polygons, 5 classes (`good`, `exc_solder`, `spike`, `no_good`, `poor_solder`), multi-view structure identified ($V_1$ component-level vs $V_2/V_{2.1}$ fillet-level), 1,208 raw images documented.
+- **Stage B — Migration Architecture & Plan Revision:** Completed. Dataset adapter pattern formulated, strict dataset isolation (`outputs/.../soldef/` vs `outputs/.../ceramic/`), unlabeled data exclusion policy established.
+- **Stage C — Dataset Adapter & Verified Group-Aware Split:** Completed (Audited & Verified). Implemented `BaseDatasetAdapter`, `CeramicAdapter`, and `SolDefAdapter` in `src/data/adapters/`. Generated frozen 70/15/15 splits in `outputs/splits/soldef/phase1/` (200 images, 66 groups [30/19/17], 0 leakage) and `outputs/splits/soldef/phase1_v1/` (228 images). All 54 tests pass.
+- **Stage D — SolDef Preprocessing & Visual QC:** Completed. Implemented dual preprocessing pipelines in `src/data/preprocessing/`. Extracted 256 patches ($256 \times 256$) strictly from Train split; preprocessed 200 letterbox detector images ($640 \times 640$); generated 12 visual QC panels and exhaustive metrics report. All 61 tests pass.
+- **Stage E — Preprocessing Acceptance Audit:** (Next Milestone — NOT Started; Awaiting Approval). Rigorous verification of SolDef preprocessed geometry and manifests.
+- **Stage F — Real-Only Detector Baseline Planning:** (NOT Started). Specify YOLOv8 configuration and evaluation protocol on SolDef test split.
+- **Stage G — Real-Only Detector Baseline Execution:** (NOT Started). Train baseline detector on real SolDef data in Colab GPU.
+
+---
+
+### Phase 4 (Legacy Plan) / Stage G (SolDef) — Real-only detector baseline
 **Code development:** VS Code  
 **Training:** Google Colab GPU
 

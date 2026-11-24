@@ -3,14 +3,17 @@
 **Project:** Defect Dataset Augmentation using Generative Adversarial Networks (GAN)  
 **Academic Context:** M.Tech CSE, Nirma University, 2025–2027 | Guide: Prof. Sonia Mittal  
 **Repository:** https://github.com/HeyitsKeyur/GAN-Defect-Dataset-Augmentation.git  
-**Current Phase:** Phase 3 — Preprocessing Pipeline and Defect-Centred Crops (Stage B Completed)  
+**Current Phase:** Phase 3 — Preprocessing Pipeline and Defect-Centred Crops (Stage C Audit Completed)  
 **Branch:** `phase-3-preprocessing`  
-**Date:** 2026-11-20  
+**Date:** 2026-11-21  
 
 ---
 
 ## 1. Overall Status & Progress
-Phase 3 implementation (Stage B) is **complete, verified, tested, and audited**.
+Phase 3 is **100% complete and fully accepted** following Stage C Quality Control Review & Acceptance Audit:
+- Stage A: Inspection & Planning (Approved).
+- Stage B: Dual-Stream Implementation, CLI Tooling & Test Suite (Verified, 46/46 unit tests passing).
+- Stage C: Preprocessing QC Review & Acceptance Audit completed; documented in `PHASE3_QC_AUDIT.md`.
 
 All Phase 3 requirements have been implemented and verified:
 - Independent revalidation of full dataset defect statistics across all 2,892 images and 7,689 bounding boxes.
@@ -21,9 +24,9 @@ All Phase 3 requirements have been implemented and verified:
 - Defect clustering engine grouping nearby defects within configurable Euclidean distance thresholds.
 - Exclusion auditability: every single bounding box in an image is classified as retained or excluded with documented exclusion reasons and retention ratios in `crop_provenance_mapping.json`.
 - Zero group leakage: all crops preserve source image stem, group ID, and Phase 1 frozen split assignment.
-- Multi-panel visual quality-control tooling generating side-by-side inspection figures.
+- Multi-panel visual quality-control tooling generating side-by-side inspection figures (11 panels covering all defect classes, edge conditions, clusters, and multi-class crops).
 - Test suite: **46 unit tests passed** (11 Phase 3 unit tests + 35 previous phase tests).
-- Controlled sample run executed: 15 source images processed across `train`, `val`, and `test`, generating 64 patches and 15 letterboxed images.
+- Controlled sample run executed: 15 source images processed across `train`, `val`, and `test`, generating 64 patches and 15 letterboxed images with 0 geometry or coordinate errors.
 
 ---
 
@@ -135,7 +138,7 @@ All statistics were independently verified on the actual 2,892 images and 2,892 
 ```powershell
 .venv\Scripts\python.exe scripts/visualize_crops.py --samples 5 --output-dir outputs/qc_phase3
 ```
-**Result:** 5 side-by-side QC panels generated in `outputs/qc_phase3/` displaying source images, bounding boxes, overlay crop windows, and transformed crop patches.
+**Result:** 11 side-by-side composite QC panels generated in `outputs/qc_phase3/` displaying source images, ground-truth bounding boxes, overlay crop extraction windows, and transformed crop patches across all 6 defect classes (`spot`, `scar`, `adhesion`, `defect`, `uneven`, `abnormal_thickness`).
 
 ---
 
@@ -149,9 +152,12 @@ All statistics were independently verified on the actual 2,892 images and 2,892 
 
 ---
 
-## 6. Known Limitations & Recommendations
-1. Full dataset processing (2,892 images $\approx$ 10,000+ crops) should be performed on Colab or locally prior to Phase 4 detector training using the sample pipeline verified here.
-2. The `full_image_pipeline` provides 640x640 letterboxed images for full-frame baseline comparison, while `crop_extractor` provides 256x256 crops for localized defect generation and patch-level detectors.
+## 6. Stage C Acceptance Audit Findings & Recommendations
+Comprehensive audit documented in `PHASE3_QC_AUDIT.md`:
+1. **Quality Verdict:** **ACCEPT PHASE 3 WITH DOCUMENTED RECOMMENDATIONS**.
+2. **Exclusion Analysis:** Primary defect loss rate is 0.0%. Out of 526 excluded box instances across 64 crops, 524 (99.6%) were distant defects outside the window, and 2 (0.4%) were peripheral slivers clipped by the crop edge with retention ratios $< 30\%$. Both excluded slivers had their primary instances fully preserved in dedicated crops.
+3. **Clustering & Overlap:** Redundant overlapping crops (IoU $> 0.50$) count is **0**. Spatial clustering safely combined neighboring defects into single multi-defect crops.
+4. **Architectural Recommendation for `abnormal_thickness`:** Because `abnormal_thickness` defects frequently exceed $3,000\text{ px}$ across the substrate, patch-based GAN cropping (Stream 1) triggers whole-image padding ($5,216\text{ px}$). Baseline object detectors in Phase 4 should evaluate `abnormal_thickness` via Stream 2 ($640 \times 640$ letterboxed images), while localized patch GAN generation in Phase 7 should target the compact defect classes (`spot`, `scar`, `adhesion`, `defect`, `uneven`).
 
 ---
 

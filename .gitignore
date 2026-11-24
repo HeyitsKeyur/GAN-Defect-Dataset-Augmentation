@@ -76,6 +76,15 @@ outputs/audit/**/*.jpeg
 outputs/qc_phase3/
 
 # ==========================================
+# Preprocessed Datasets & Visual Panels (Stay Local / Google Drive)
+# ==========================================
+outputs/preprocessing/**/images/
+outputs/preprocessing/**/labels/
+outputs/preprocessing/**/visualizations/
+outputs/preprocessing/**/*.jpg
+outputs/preprocessing/**/*.png
+
+# ==========================================
 # Temporary and OS Files
 # ==========================================
 *.tmp
