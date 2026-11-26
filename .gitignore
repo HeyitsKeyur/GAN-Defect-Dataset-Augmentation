@@ -65,6 +65,7 @@ Literature Review/
 outputs/checkpoints/
 outputs/models/
 outputs/generated/
+outputs/experiments/
 
 # ==========================================
 # Audit Outputs (Preserve small reports, ignore images)

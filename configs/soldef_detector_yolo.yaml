@@ -1,0 +1,14 @@
+# Ultralytics YOLO Dataset Specification for SolDef_AI Primary Side-View Benchmark
+# Quarantined: Only specifies train and val. The test partition is strictly held out.
+path: outputs/preprocessing/soldef/phase_d/detector
+train: train/images
+val: val/images
+
+# Test set quarantine notice:
+# test/images is intentionally omitted from standard training to prevent data leakage.
+
+nc: 3
+names:
+  0: exc_solder
+  1: spike
+  2: poor_solder

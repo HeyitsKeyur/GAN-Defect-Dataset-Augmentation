@@ -1,0 +1,56 @@
+# SolDef_AI Primary Side-View YOLOv8s Real-Only Baseline Configuration
+experiment_name: baseline_real_only
+dataset_name: soldef
+benchmark_name: primary_side_view
+data_dir: outputs/preprocessing/soldef/phase_d/detector
+split_manifest_dir: outputs/splits/soldef/phase1
+output_dir: outputs/experiments/baseline_yolov8s_real
+
+model:
+  model_family: yolov8
+  variant: s
+  weights: yolov8s.pt
+  pretrained: true
+  num_classes: 3
+  names:
+    0: exc_solder
+    1: spike
+    2: poor_solder
+
+schedule:
+  image_size: 640
+  batch_size: 16
+  fallback_batch_size: 8
+  epochs: 120
+  patience: 25
+  optimizer: SGD
+  momentum: 0.937
+  lr0: 0.01
+  lrf: 0.01
+  weight_decay: 0.0005
+  warmup_epochs: 3.0
+  warmup_momentum: 0.8
+  cos_lr: true
+  seed: 42
+  deterministic: true
+  device: "0"
+  workers: 2
+  save: true
+  save_period: -1
+  val: true
+
+augmentation:
+  fliplr: 0.5
+  flipud: 0.0
+  degrees: 0.0
+  scale: 0.1
+  hsv_h: 0.015
+  hsv_s: 0.4
+  hsv_v: 0.2
+  translate: 0.05
+  shear: 0.0
+  perspective: 0.0
+  mosaic: 0.0      # Strictly disabled: Real-only baseline prohibits synthetic 4-crop mosaics
+  mixup: 0.0       # Strictly disabled: Real-only baseline prohibits phantom blending
+  copy_paste: 0.0  # Strictly disabled: Real-only baseline prohibits synthetic cut-and-paste
+  erasing: 0.0
