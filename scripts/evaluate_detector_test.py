@@ -141,6 +141,27 @@ def main() -> int:
     mean_p = float(eval_results.box.mp) if hasattr(eval_results, "box") else 0.0
     mean_r = float(eval_results.box.mr) if hasattr(eval_results, "box") else 0.0
 
+    # Extract per-class metrics if available
+    class_metrics = {}
+    if hasattr(eval_results, "box"):
+        box = eval_results.box
+        p_arr = getattr(box, "p", None)
+        r_arr = getattr(box, "r", None)
+        ap50_arr = getattr(box, "ap50", None)
+        ap_arr = getattr(box, "maps", None)
+
+        for cid, cname in config.model.names.items():
+            c_dict = {}
+            if p_arr is not None and len(p_arr) > cid:
+                c_dict["precision"] = float(p_arr[cid])
+            if r_arr is not None and len(r_arr) > cid:
+                c_dict["recall"] = float(r_arr[cid])
+            if ap50_arr is not None and len(ap50_arr) > cid:
+                c_dict["ap50"] = float(ap50_arr[cid])
+            if ap_arr is not None and len(ap_arr) > cid:
+                c_dict["ap50_95"] = float(ap_arr[cid])
+            class_metrics[cname] = c_dict
+
     summary = MetricsCollector.build_summary_report(
         experiment_name=config.experiment_name,
         split_name="test",
@@ -149,6 +170,7 @@ def main() -> int:
         mean_p=mean_p,
         mean_r=mean_r,
         optimal_conf=args.conf_threshold,
+        class_metrics=class_metrics,
     )
 
     summary.save_json(output_dir / "test_metrics.json")
