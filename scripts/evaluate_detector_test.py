@@ -104,11 +104,14 @@ def main() -> int:
     print(f"[TEST SPLIT OK] 30 images, 62 target annotations verified.")
 
     # Generate temporary single-split test yaml for Ultralytics
+    # Note: Ultralytics check_det_dataset schema validation strictly requires both 'train' and 'val' keys
     test_yaml_path = output_dir / "test_eval_dataset.yaml"
     test_imgs = (data_dir / "test" / "images").as_posix()
     test_yaml_lines = [
         f"path: {data_dir.as_posix()}",
-        f"val: {test_imgs}",  # Evaluate on test split
+        f"train: {test_imgs}",  # Schema placeholder: satisfies Ultralytics check_det_dataset requirement
+        f"val: {test_imgs}",    # Evaluation target: evaluated strictly on quarantined test partition
+        f"test: {test_imgs}",   # Explicit test partition reference
         f"nc: {config.model.num_classes}",
         "names:",
     ]
